@@ -44,6 +44,8 @@ Test.Run(() =>
     return data == "Data1\r\nData2\r\n";
 });
 
+Console.ReadKey();
+
 public class DemoDm
 {
     [JsonPropertyName("name")]
