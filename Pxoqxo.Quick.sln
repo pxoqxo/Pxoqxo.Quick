@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.37411.7 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pxoqxo.Quick", "Pxoqxo.Quick\Pxoqxo.Quick.csproj", "{5CD81A8C-C5A6-48EE-800D-40BDEFC10A75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pxoqxo.Quick.Tests", "Pxoqxo.Quick.Tests\Pxoqxo.Quick.Tests.csproj", "{B40F9B18-B39D-48EC-8711-15471BEF0754}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5CD81A8C-C5A6-48EE-800D-40BDEFC10A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD81A8C-C5A6-48EE-800D-40BDEFC10A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD81A8C-C5A6-48EE-800D-40BDEFC10A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40F9B18-B39D-48EC-8711-15471BEF0754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40F9B18-B39D-48EC-8711-15471BEF0754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40F9B18-B39D-48EC-8711-15471BEF0754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40F9B18-B39D-48EC-8711-15471BEF0754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
