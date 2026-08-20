@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Pxoqxo.Quick\Pxoqxo.Quick.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Pxoqxo.UnitTest">
+      <HintPath>..\..\publish\Pxoqxo.UnitTest\em1.0\Pxoqxo.UnitTest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
