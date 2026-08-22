@@ -13,6 +13,7 @@
 		<OutputPath>..\..\publish\Pxoqxo.Quick\em1.0</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
+		<RuntimeIdentifier>portable</RuntimeIdentifier>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -25,7 +26,7 @@
 
 	<ItemGroup>
 		<Reference Include="Pxoqxo.Ext.Core">
-			<HintPath>..\..\publish\Pxoqxo.Ext\em1.0\Pxoqxo.Ext.Core.dll</HintPath>
+			<HintPath>..\..\publish\Pxoqxo.Ext\em1.0\portable\Pxoqxo.Ext.Core.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 

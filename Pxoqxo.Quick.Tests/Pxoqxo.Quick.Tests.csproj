@@ -27,10 +27,10 @@
 
 	<ItemGroup>
 		<Reference Include="Pxoqxo.Ext.Core">
-			<HintPath>..\..\publish\Pxoqxo.Ext\em1.0\Pxoqxo.Ext.Core.dll</HintPath>
+			<HintPath>..\..\publish\Pxoqxo.Ext\em1.0\portable\Pxoqxo.Ext.Core.dll</HintPath>
 		</Reference>
 		<Reference Include="Pxoqxo.UnitTest">
-			<HintPath>..\..\publish\Pxoqxo.UnitTest\em1.0\Pxoqxo.UnitTest.dll</HintPath>
+			<HintPath>..\..\publish\Pxoqxo.UnitTest\em1.0\portable\Pxoqxo.UnitTest.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 
