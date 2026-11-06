@@ -2,8 +2,10 @@
 using Pxoqxo.Quick;
 using Pxoqxo.UnitTest;
 using System.Text.Json.Serialization;
+using System.Xml.Serialization;
 
 string? json = null;
+string? xml = null;
 
 Test.Run(() =>
 {
@@ -14,6 +16,24 @@ Test.Run(() =>
 Test.Run(() =>
 {
     DemoDm? demoDm = QuickJson.FromJson<DemoDm>(json ?? string.Empty);
+
+    if (demoDm == null)
+    {
+        return false;
+    }
+
+    return demoDm.Name == "Hello pxoqxo!";
+});
+
+Test.Run(() =>
+{
+    xml = QuickXml.ToXml(new DemoDm());
+    return !xml.IsNullOrEmptyOrWhiteSpace();
+});
+
+Test.Run(() =>
+{
+    DemoDm? demoDm = QuickXml.FromXml<DemoDm>(xml ?? string.Empty);
 
     if (demoDm == null)
     {
@@ -46,8 +66,10 @@ Test.Run(() =>
 
 Console.ReadKey();
 
+[XmlRoot("demo")]
 public class DemoDm
 {
     [JsonPropertyName("name")]
+    [XmlElement("name")]
     public string Name { set; get; } = "Hello pxoqxo!";
 }
