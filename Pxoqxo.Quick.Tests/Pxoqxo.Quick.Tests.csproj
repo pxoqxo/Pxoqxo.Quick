@@ -22,6 +22,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<EmbeddedResource Include="resource.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\Pxoqxo.Quick\Pxoqxo.Quick.csproj" />
 	</ItemGroup>
 
