@@ -64,6 +64,34 @@ Test.Run(() =>
     return data == "Data1\r\nData2\r\n";
 });
 
+Test.Run(() =>
+{
+    string? secret = QuickCrypto.GenerateSecret();
+    if (secret.IsNullOrEmptyOrWhiteSpace())
+    {
+        return false;
+    }
+
+    if (!QuickCrypto.SetSecret(secret))
+    {
+        return false;
+    }
+
+    string? crypto = QuickCrypto.ToCrypto("Pxoqxo");
+    if (crypto.IsNullOrEmptyOrWhiteSpace())
+    {
+        return false;
+    }
+
+    string? plain = QuickCrypto.FromCrypto(crypto);
+    if (plain.IsNullOrEmptyOrWhiteSpace())
+    {
+        return false;
+    }
+
+    return plain == "Pxoqxo";
+});
+
 Console.ReadKey();
 
 [XmlRoot("demo")]
