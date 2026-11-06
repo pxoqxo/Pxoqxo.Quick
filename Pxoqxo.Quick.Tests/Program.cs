@@ -1,6 +1,7 @@
 ﻿using Pxoqxo.Ext.Core;
 using Pxoqxo.Quick;
 using Pxoqxo.UnitTest;
+using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Xml.Serialization;
 
@@ -90,6 +91,18 @@ Test.Run(() =>
     }
 
     return plain == "Pxoqxo";
+});
+
+Test.Run(() =>
+{
+    Assembly assembly = Assembly.GetExecutingAssembly();
+    string? data = QuickResource.GetResourceData(assembly, "Pxoqxo.Quick.Tests.resource.txt");
+    if (data.IsNullOrEmptyOrWhiteSpace())
+    {
+        return false;
+    }
+
+    return data == "This is embedded resource.\r\n";
 });
 
 Console.ReadKey();
